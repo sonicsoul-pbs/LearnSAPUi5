@@ -1,0 +1,28 @@
+<mvc:View
+    controllerName="learnsapui5.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <Shell>
+        <App class="myAppDemoWT" >
+            <pages>
+                <Page title="{i18n>homePageTitle}">
+                <headerContent>
+                    <Button 
+                        icon="sap-icon://hello-world" 
+                        press=".onOpenDialog">
+                    </Button>
+                </headerContent>
+                    <content>
+                       <mvc:XMLView 
+                            viewName="learnsapui5.view.HelloPanel"
+                       ></mvc:XMLView>
+                       <mvc:XMLView 
+                            viewName="learnsapui5.view.InvoiceList"
+                       ></mvc:XMLView>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>   
+</mvc:View> 
