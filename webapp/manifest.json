@@ -84,7 +84,7 @@
       "config": {
          "routerClass": "sap.m.routing.Router",
          "viewType": "XML",
-         "viewPath": "learnsapui5/view",
+         "viewPath": "learnsapui5.view",
          "controlId": "app",
          "controlAggregation": "pages",
          "async": true
@@ -96,7 +96,7 @@
           "target": "overview" 
         },
         {
-          "pattern": "detail",
+          "pattern": "detail/{invoicePath}",
           "name": "detail",
           "target": "detail" 
         }
